@@ -1,4 +1,15 @@
-window.addEventListener('DOMContentLoaded', includeHTML)
+window.addEventListener('DOMContentLoaded', initStuff)
+
+function initStuff() {
+	includeHTML();
+	setTimeout(function(){
+		var li = window.location.pathname.substring(window.location.pathname.lastIndexOf('/')+1);
+		var id_ref = "header_" + (li===""?"index.html":li);
+		//console.log("banana: " + li + " " + id_ref);
+		var dom=document.getElementById(id_ref);
+		if (dom) dom.setAttribute('aria-current','page'); // highlight the menu selection via css
+	},100);
+}
 
 function includeHTML() {
   var z, i, elmnt, file, xhttp;
