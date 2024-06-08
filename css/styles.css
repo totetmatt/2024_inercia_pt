@@ -764,36 +764,6 @@ input:checked~.a-hamburger {
 	position: relative
 }
 
-.o-ticketOption:last-of-type:before {
-	content: "";
-	opacity: .5;
-	background-color: #ff9a8b;
-	background-image: linear-gradient(45deg, #ff9a8b 0%, #ff6a88 55%, #ff99ac 100%);
-	border: 2px solid #0000;
-	border-radius: 16px;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	-webkit-mask-image: linear-gradient(#fff 0 0), linear-gradient(#fff 0 0);
-	mask-image: linear-gradient(#fff 0 0), linear-gradient(#fff 0 0);
-	-webkit-mask-position: 0 0, 0 0;
-	mask-position: 0 0, 0 0;
-	-webkit-mask-size: auto, auto;
-	mask-size: auto, auto;
-	-webkit-mask-repeat: repeat, repeat;
-	mask-repeat: repeat, repeat;
-	-webkit-mask-clip: padding-box, border-box;
-	mask-clip: padding-box, border-box;
-	-webkit-mask-origin: padding-box, border-box;
-	mask-origin: padding-box, border-box;
-	-webkit-mask-composite: xor;
-	mask-composite: exclude;
-	-webkit-mask-source-type: auto, auto;
-	mask-mode: match-source, match-source
-}
-
 .o-ticketOption:last-of-type .o-ticketOption__figure {
 	background-color: #fee140;
 	background-image: linear-gradient(90deg, #fee140 0%, #fa709a 100%)
@@ -2165,4 +2135,12 @@ table .a-badge {
 	max-inline-size: 720px;
 	margin-inline-start: auto;
 	margin-inline-end: auto
+}
+
+#osmmap {
+    background-image: url('../images/inerciamap.webp');
+    width: 100%;
+    min-height: 600px;
+    background-size: cover;
+    background-position: center;
 }
