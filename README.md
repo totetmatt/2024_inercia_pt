@@ -22,4 +22,4 @@ And eventually make it's way to https://2024.inercia.pt
 - add supporters logos section on footer (so far this year: SFIA, camara de almada, enough records)
 - optimize size of some of the heavier images
 - retest all pages under all resolutions
-- change the 2024.inercia.pt DNS to point to github pages, then create a CNAME file with `2024.inercia.pt` (if you do it before the DNS is changed, the preview stops working properly)
+- change the 2024.inercia.pt DNS to point to github pages, then create a CNAME file with `2024.inercia.pt` (if you do it before the DNS is changed, the preview stops working properly) or i guess we could just upload all of this to inercia.pt server, whenever there is any small change
