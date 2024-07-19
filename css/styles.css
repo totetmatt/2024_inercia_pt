@@ -295,11 +295,11 @@ input:checked~.a-hamburger {
 }
 
 .a-summary {
-	font-size: var(--fs-l)
+	font-size: var(--fs-l);
 }
 
 .a-summary.-large {
-	font-size: var(--fs-xl)
+	font-size: var(--fs-xl);
 }
 
 .a-summary.-small {
@@ -1350,7 +1350,7 @@ thead .o-timetable__cell {
 }
 
 .b-pageHeader {
-	background: var(--gradient-blood-red);
+	background: var(--gradient-deluxe-paint);
 	color: var(--color-white);
 	padding-block: calc(var(--unit-xxl) + 60px)var(--unit-xxl);
 	position: relative
@@ -2149,4 +2149,30 @@ table .a-badge {
     min-height: 600px;
     background-size: cover;
     background-position: center;
+}
+
+
+.b-index_header {
+	z-index: 2;
+	padding-inline-start: 12vw;
+	padding-inline-end: 12vw;
+	position: relative
+}
+
+.b-index_header picture {
+	display: block
+}
+
+.b-index_header picture img {
+	opacity: .95;
+	width: max-content;
+	height: auto;
+	clip-path: inset(30% 0px 30% 0px);
+	margin-top: -20%;
+	margin-bottom: -20%;
+}
+
+.s-content-date {
+	text-align:center;
+	color: var(--color-tropical-indigo);
 }
