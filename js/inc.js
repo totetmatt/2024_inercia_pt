@@ -32,6 +32,9 @@ function includeHTML() {
         }
       }
       xhttp.open("GET", file, true);
+	  xhttp.setRequestHeader("Cache-Control", "no-cache, no-store, max-age=0");
+	  xhttp.setRequestHeader("Expires", "Tue, 01 Jan 1980 1:00:00 GMT");
+	  xhttp.setRequestHeader("Pragma", "no-cache"); 
       xhttp.send();
       /* Exit the function: */
       return;
