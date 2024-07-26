@@ -11,6 +11,7 @@ And eventually make it's way to https://2024.inercia.pt
 - update css to match the colors of this years image
 - text on participate for each section more clear (not a wall of text paragraph)
 - more info on sleeping area on location page
+- add paragraph about associação inércia on contact
 - add press kit info and download link on contact
 - add team information on contact page
 - credit nova website somewhere
