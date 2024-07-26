@@ -12,7 +12,6 @@ And eventually make it's way to https://2024.inercia.pt
 - text on participate for each section more clear (not a wall of text paragraph)
 - more info on sleeping area on location page
 - add press kit info and download link on contact
-- add schedule page
 - add team information on contact page
 - credit nova website somewhere
 - add some screenshots for music showcase
