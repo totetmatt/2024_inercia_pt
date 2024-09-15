@@ -1130,7 +1130,7 @@ thead .o-timetable__cell {
 .b-features {
 	--padding-block-start: var(--unit-xl);
 	--padding-block-end: var(--unit-xl);
-	padding-block: var(--padding-block-start)var(--padding-block-end)
+	/*padding-block: var(--padding-block-start)var(--padding-block-end)*/
 }
 
 .b-features.-paddingBlockStartNone {
@@ -1936,8 +1936,7 @@ h4,
 h5,
 h6 {
 	letter-spacing: -.0275em;
-	margin: 0;
-	padding: 0
+	padding: 0;
 }
 
 h1 {
