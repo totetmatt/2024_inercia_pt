@@ -2287,3 +2287,49 @@ img.icon {
 	width: 21px;
 	/* height: 21px; */
 }
+
+footer ul {
+	display: flex;
+	justify-content: space-around;
+	gap: calc(var(--gap) * 3);
+}
+
+#partners ul {
+	margin-bottom: calc(var(--gap) * 6);
+	list-style: none;
+	width: 75%;
+	margin: auto;
+}
+
+#partners-main li,
+#partners-sec li {
+	flex: 1;
+}
+
+#partners-sec a {
+	display: flex;
+	justify-content: center;
+}
+
+#partners {
+	margin-top: calc(var(--gap) * 4);
+}
+
+#partners a {
+	display: block;
+}
+
+#partners-sec {
+	flex-wrap: wrap;
+	max-width: 100%;
+}
+
+#partners-sec li {
+	justify-content: center;
+	min-width: 25%;
+}
+
+#partners a:hover, #partners a:hover svg {
+    color: rgba(146, 255, 240, 1);
+    fill: rgba(146, 255, 240, 1);
+}
