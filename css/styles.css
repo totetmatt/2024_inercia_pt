@@ -1214,7 +1214,7 @@ thead .o-timetable__cell {
 .b-hero {
 	aspect-ratio: 16/9;
 	border-top: var(--site-nav-height)solid var(--color-black-off);
-	height: 100%;
+	height: 60%;
 	z-index: 1;
 	inline-size: 100%;
 	display: flex;
@@ -1248,34 +1248,18 @@ thead .o-timetable__cell {
 	justify-content: flex-end
 }
 
-.b-hero:after {
-	content: "";
-	z-index: 2;
-	background: radial-gradient(transparent 60%, var(--color-black-off));
-	background-size: cover;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0
+.b-hero img {
+    clip-path: margin-box;
+    margin-top: -20%;
+    margin-bottom: -20%;
+    /* top: -10%; */
+    position: relative;
+    /* height: unset; */
+    width: fit-content;
+    left: 0px;
+    max-height: unset;
 }
 
-.b-hero__brand {
-	z-index: 2;
-	padding-inline-start: 12vw;
-	padding-inline-end: 12vw;
-	position: relative
-}
-
-.b-hero__brand picture {
-	display: block
-}
-
-.b-hero__brand picture img {
-	opacity: .95;
-	width: 100%;
-	height: auto
-}
 
 .b-hero .m-componentHeader {
 	inline-size: 100%;
@@ -2172,7 +2156,10 @@ table .a-badge {
 }
 
 .b-index_header picture {
-	display: block
+	display: block;
+position: top;
+top: 0px;
+left: 0px;
 }
 
 .b-index_header picture img {
