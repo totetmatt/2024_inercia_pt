@@ -3,11 +3,15 @@ window.addEventListener('DOMContentLoaded', initStuff)
 function initStuff() {
 	includeHTML();
 	setTimeout(function(){
-		var li = window.location.pathname.substring(window.location.pathname.lastIndexOf('/')+1);
+		var li = document.location.pathname.substr(4);
 		var id_ref = "header_" + (li===""?"index.html":li);
 		//console.log("banana: " + li + " " + id_ref);
 		var dom=document.getElementById(id_ref);
 		if (dom) dom.setAttribute('aria-current','page'); // highlight the menu selection via css
+
+		var fl = document.getElementById("flagref");
+		if (fl) fl.href = fl.href + li;
+		
 	},100);
 }
 
