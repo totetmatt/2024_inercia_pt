@@ -2206,6 +2206,14 @@ left: 0px;
 	background-color: rgb(208, 140, 169);
 }
 
+.performance {
+	background-color: rgb(255, 148, 66);
+}
+
+.djset {
+	background-color: rgb(68, 30, 255);
+}
+
 .compo {
 	background-color: rgb(100, 200, 100);
 	color: rgb(0, 0, 0);
