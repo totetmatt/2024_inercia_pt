@@ -2324,6 +2324,7 @@ footer ul {
 #partners-sec {
 	flex-wrap: wrap;
 	max-width: 100%;
+	padding: 1em;
 }
 
 #partners-sec li {
