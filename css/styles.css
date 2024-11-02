@@ -1532,8 +1532,7 @@ thead .o-timetable__cell {
 	-webkit-backdrop-filter: blur(16px);
 	backdrop-filter: blur(16px);
 	box-sizing: border-box;
-	height: var(--site-nav-height);
-	padding-block: calc(var(--unit-s)/2);
+	padding: 10px 0;
 	z-index: 10;
 	width: 100vw;
 	position: fixed;
@@ -1571,7 +1570,8 @@ thead .o-timetable__cell {
 	margin-inline-end: auto;
 	padding-inline-start: max(20px, min(5.55556vw, 80px));
 	padding-inline-end: max(20px, min(5.55556vw, 80px));
-	display: flex
+	display: flex;
+	position: relative;
 }
 
 .b-siteNav__items {
@@ -1579,14 +1579,22 @@ thead .o-timetable__cell {
 	padding: 0;
 	font-size: 16px;
 	font-weight: 700;
+	align-items: center;
 	list-style: none
 }
 
 .b-siteNav__container a img {
 	height: 100%;
 	vertical-align: top;
+	/* width: 24px;
+	height: auto; */
 	/*	width: 24px;
 	height: 24px*/
+}
+
+#flagref img {
+	width: 40px;
+	height: auto;
 }
 
 .b-siteNav__link {
@@ -1655,6 +1663,7 @@ thead .o-timetable__cell {
 		z-index: 7;
 		width: 280px;
 		height: 100lvh;
+		align-items: flex-end;
 		transition: all .25s cubic-bezier(.77, .2, .05, 1);
 		position: absolute;
 		top: 0;
@@ -2183,13 +2192,6 @@ table .a-badge {
 	color: var(--color-tropical-indigo);
 }
 
-#flagref img {
-	height: auto;
-	vertical-align: -webkit-baseline-middle;
-}
-
-
-
 /***********
  * TIMETABLE
  ***********/
@@ -2317,6 +2319,12 @@ footer ul {
 }
 
 @media (max-width: 768px) {
+	#flagref img {
+		width: 35px;
+		height: auto;
+		margin-top: 15px;
+	}
+
 	#partners ul {
 		flex-wrap: wrap;
 	}
