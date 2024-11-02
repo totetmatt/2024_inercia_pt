@@ -1578,9 +1578,10 @@ thead .o-timetable__cell {
 }
 
 .b-siteNav__container a img {
-	/*width: 100%;*/
-	width: 24px;
-	height: 24px
+	height: 100%;
+	vertical-align: top;
+/*	width: 24px;
+	height: 24px*/
 }
 
 .b-siteNav__link {
@@ -2335,4 +2336,11 @@ footer ul {
 #partners a:hover, #partners a:hover svg {
     color: rgba(146, 255, 240, 1);
     fill: rgba(146, 255, 240, 1);
+}
+
+.add-info {
+	text-align: start;
+    padding-inline: calc(var(--unit-s));
+    padding-block: calc(var(--unit-s) / 1.5);
+    border-bottom: 1px solid var(--table-border-color);
 }
