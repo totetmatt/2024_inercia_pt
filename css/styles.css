@@ -1618,7 +1618,23 @@ thead .o-timetable__cell {
 	pointer-events: none
 }
 
+#logo-mobile {
+	display: none;
+}
+
+#logo-desktop {
+	display: initial;
+}
+
 @media (max-width:959px) {
+
+	#logo-mobile {
+		display: initial;
+	}
+
+	#logo-desktop {
+		display: none;
+	}
 
 	.b-siteNav {
 		--site-nav-brand-width: 92px
@@ -2319,14 +2335,6 @@ footer ul {
 	}
 }
 
-#logo-mobile {
-	display: none;
-}
-
-#logo-desktop {
-	display: initial;
-}
-
 @media (max-width: 768px) {
 	#flagref img {
 		width: 35px;
@@ -2351,14 +2359,6 @@ footer ul {
 		flex: 1 1 20%;
 		justify-content: center;
 		display: flex;
-	}
-
-	#logo-mobile {
-		display: initial;
-	}
-
-	#logo-desktop {
-		display: none;
 	}
 }
 
