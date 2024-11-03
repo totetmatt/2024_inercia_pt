@@ -2319,6 +2319,14 @@ footer ul {
 	}
 }
 
+#logo-mobile {
+	display: none;
+}
+
+#logo-desktop {
+	display: initial;
+}
+
 @media (max-width: 768px) {
 	#flagref img {
 		width: 35px;
@@ -2343,6 +2351,14 @@ footer ul {
 		flex: 1 1 20%;
 		justify-content: center;
 		display: flex;
+	}
+
+	#logo-mobile {
+		display: initial;
+	}
+
+	#logo-desktop {
+		display: none;
 	}
 }
 
