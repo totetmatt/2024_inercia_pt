@@ -2305,6 +2305,7 @@ td h3 {
 	column-count: 3;
 	margin: 0 auto;
 	list-style: none;
+	padding: 10px 20px;
 }
 
 .visitors li img {
@@ -2336,6 +2337,16 @@ footer ul {
 }
 
 @media (max-width: 768px) {
+
+	.visitors {
+		column-count: 2;
+		padding: 10px;
+	}
+
+	.visitors li {
+		margin-bottom: 5px;
+	}
+
 	#flagref img {
 		width: 35px;
 		height: auto;
