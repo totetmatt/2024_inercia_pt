@@ -32,19 +32,16 @@
 	<link rel="apple-touch-icon" sizes="180x180" href="../images/ID_64px.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="../images/ID_64px.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="../images/ID_64px.png">
-	<!--<link rel="manifest" href="https://2024.inercia.pt/site.webmanifest">
-      <link rel="mask-icon" href="https://2024.inercia.pt/safari-pinned-tab.svg" color="#2b3e81">
-      <meta name="msapplication-TileColor" content="#2b3e81">
-      <meta name="theme-color" content="#061213">-->
 	<meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+	<script type="text/javascript" src="../js/inc.js"></script>
 </head>
-<script type="text/javascript" src="../js/inc.js"></script>
 <script async defer src="../js/jtruk-timezoner.js"></script>
 <script defer>
 	window.onload = () => {
 		jtzrInit({
 			eventUTC: 0
 		});
+		addInfoInit();
 	}
 </script>
 
@@ -68,13 +65,6 @@
 									UTC+1</span></p>
 
 							<table class="timetable">
-								<!--<thead>
-							<tr>
-								<th class="hidden" scope="col">Time</th>
-								<th class="hidden" scope="col">EVENTO</th>
-								<th class="hidden" scope="col">Description</th>
-							</tr>
-						</thead>-->
 								<tbody>
 									<tr>
 										<td colspan="3">
@@ -86,8 +76,14 @@
 										<td>
 											<div class="tt event anchor">REVELAÇÃO</div>
 										</td>
-										<td>Revelação online do tema para a competição temática deste ano.</td>
+										<td class="add-info">Revelação online do tema para a competição temática deste
+											ano.</td>
 									</tr>
+									<tr class="info-tr">
+										<td colspan="3" w3-include-html="./add-fast-theme.html">
+										</td>
+									</tr>
+									<tr class="empty-tr"></tr>
 
 									<tr>
 										<td colspan="3">
@@ -142,8 +138,13 @@
 										<td>
 											<div class="tt performance anchor">PERFORMANCE</div>
 										</td>
-										<td>Chiptune Set ao vivo por Enfys</td>
+										<td class="add-info">Chiptune Set ao vivo por Enfys</td>
 									</tr>
+									<tr class="info-tr">
+										<td colspan="3" w3-include-html="./add-enfys.html">
+										</td>
+									</tr>
+									<tr class="empty-tr"></tr>
 
 									<tr>
 										<td colspan="3">
@@ -155,8 +156,13 @@
 										<td>
 											<div class="tt djset anchor">DJ SET</div>
 										</td>
-										<td>dojoe</td>
+										<td class="add-info">dojoe</td>
 									</tr>
+									<tr class="info-tr">
+										<td colspan="3" w3-include-html="./add-dojoe.html">
+										</td>
+									</tr>
+									<tr class="empty-tr"></tr>
 									<tr>
 										<td><span data-jtzr-date="2024-12-07" class="jtzr-time">02:00</span></td>
 										<td>
@@ -169,8 +175,13 @@
 										<td>
 											<div class="tt djset anchor">DJ SET</div>
 										</td>
-										<td>DJ General Vileam</td>
+										<td class="add-info">DJ General Vileam</td>
 									</tr>
+									<tr class="info-tr">
+										<td colspan="3" w3-include-html="./add-general-vileam.html">
+										</td>
+									</tr>
+									<tr class="empty-tr"></tr>
 
 
 									<tr>
@@ -183,8 +194,13 @@
 										<td>
 											<div class="tt seminar anchor">SEMINÁRIO</div>
 										</td>
-										<td>"Restoring the TENET" por Load ZX Museum</td>
+										<td class="add-info">"Restoring the TENET" por Load ZX Museum</td>
 									</tr>
+									<tr class="info-tr">
+										<td colspan="3" w3-include-html="./add-tenet.html">
+										</td>
+									</tr>
+									<tr class="empty-tr"></tr>
 									<tr>
 										<td><span data-jtzr-date="2024-12-07" class="jtzr-time">11:00</span></td>
 										<td>

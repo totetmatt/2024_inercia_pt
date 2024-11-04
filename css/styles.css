@@ -7,7 +7,7 @@
 	--unit-xxl: clamp(60px, calc(120/1440*100vw), 80px);
 	--container-max-width: 1280px;
 	--fs-s: clamp(.563rem, .556vw + .438rem, .938rem);
-	--fs-base: clamp(.75rem, .741vw + .583rem, 1.25rem);
+	--fs-base: clamp(.85rem, .741vw + .583rem, 1.25rem);
 	--fs-m: clamp(1rem, .987vw + .778rem, 1.666rem);
 	--fs-l: clamp(1.333rem, 1.316vw + 1.037rem, 2.221rem);
 	--fs-xl: clamp(1.776rem, 1.755vw + 1.382rem, 2.961rem);
@@ -2406,4 +2406,39 @@ footer ul {
 	padding-inline: calc(var(--unit-s));
 	padding-block: calc(var(--unit-s) / 1.5);
 	border-bottom: 1px solid var(--table-border-color);
+}
+
+.add-info span {
+	cursor: pointer;
+	color: #9ac8fe;
+}
+
+tr.more-info {
+	margin: 0;
+	background-color: inherit;
+}
+
+tr.more-info td {
+	margin: 0;
+	padding: 0;
+}
+
+
+tr.info-tr {
+	display: none;
+	background-color: #ffffff24;
+}
+
+tr.info-tr img {
+	max-width: 100%;
+}
+
+tr.info-tr.visible {
+	display: table-row;
+}
+
+tr.empty-tr {
+	display: block;
+	margin: 0;
+	padding: 0;
 }
