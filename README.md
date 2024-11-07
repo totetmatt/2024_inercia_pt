@@ -6,9 +6,9 @@ Directly updates on https://2024.inercia.pt
 
 # TODO
 
-- add press kit info and download link on contact
-- add team information on contact page
-- add some screenshots for music showcase
-- add a news page to list the most important changes
+- add press kit info and download link for it on contact page
+- add link to download the invitation somewhere on website (and short paragraph about it)
+- add fast theme competition to participate page
+- photo + paragraph about shader royale jam on schedule
 - optimize size of some of the heavier images
-- retest all pages under all resolutions
+- add team information on contact page (maybe not needed?)
