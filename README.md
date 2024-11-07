@@ -6,9 +6,10 @@ Directly updates on https://2024.inercia.pt
 
 # TODO
 
-- add press kit info and download link for it on contact page
+- add press kit info and download link for it on contact page (waiting until it's done)
+- finish adding photo and additional info to all events on schedule page
 - add link to download the invitation somewhere on website (and short paragraph about it)
 - add fast theme competition to participate page
-- photo + paragraph about shader royale jam on schedule
+- add link to partyman upload system on website (waiting until it's created)
 - optimize size of some of the heavier images
 - add team information on contact page (maybe not needed?)
