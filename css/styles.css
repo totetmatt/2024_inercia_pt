@@ -1587,16 +1587,8 @@ thead .o-timetable__cell {
 .b-siteNav__container a img {
 	height: 100%;
 	vertical-align: top;
-	/* width: 24px;
-	height: auto; */
-	/*	width: 24px;
-	height: 24px*/
 }
 
-#flagref img {
-	width: 40px;
-	height: auto;
-}
 
 .b-siteNav__link {
 	color: currentColor;
@@ -1618,23 +1610,7 @@ thead .o-timetable__cell {
 	pointer-events: none
 }
 
-#logo-mobile {
-	display: none;
-}
-
-#logo-desktop {
-	display: initial;
-}
-
 @media (max-width:959px) {
-
-	#logo-mobile {
-		display: initial;
-	}
-
-	#logo-desktop {
-		display: none;
-	}
 
 	.b-siteNav {
 		--site-nav-brand-width: 92px
@@ -2410,6 +2386,10 @@ footer ul {
 #partners a:hover svg {
 	color: rgba(146, 255, 240, 1);
 	fill: rgba(146, 255, 240, 1);
+}
+
+table {
+	max-width: 970px;
 }
 
 .add-info {
