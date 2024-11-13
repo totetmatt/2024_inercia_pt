@@ -2433,3 +2433,7 @@ tr.empty-tr {
 	margin: 0;
 	padding: 0;
 }
+
+a.anchor {
+	text-decoration: none;
+}
