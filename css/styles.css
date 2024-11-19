@@ -2433,3 +2433,13 @@ tr.empty-tr {
 	margin: 0;
 	padding: 0;
 }
+
+a.permalink {
+	display: none;
+	text-decoration: none;
+	font-size: 70%;
+}
+
+h3:hover .permalink {
+	display: inline-block;
+}
