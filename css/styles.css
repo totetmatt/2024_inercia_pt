@@ -2272,8 +2272,10 @@ td h3 {
 }
 
 .dropdown:hover .dropdown-content {
-	display: block;
-	/*text-align: right;*/
+	display: flex;
+    gap: 10px;
+    width: 262px;
+    flex-wrap: wrap;
 }
 
 .visitors {
