@@ -2442,6 +2442,6 @@ a.permalink {
 	font-size: 70%;
 }
 
-h3:hover .permalink {
+h2:hover .permalink, h3:hover .permalink {
 	display: inline-block;
 }
