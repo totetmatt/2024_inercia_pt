@@ -2,8 +2,10 @@ window.addEventListener("DOMContentLoaded", initStuff);
 
 function initStuff() {
   includeHTML();
-  setTimeout(function () {
-    var li = document.location.pathname.substr(4);
+}
+
+function updateHeaderLinks() {
+	var li = document.location.pathname.substr(4);
     var id_ref = "header_" + (li === "" ? "index.html" : li);
     //console.log("banana: " + li + " " + id_ref);
     var dom = document.getElementById(id_ref);
@@ -11,7 +13,6 @@ function initStuff() {
 
     var fl = document.getElementById("flagref");
     if (fl) fl.href = fl.href + li;
-  }, 100);
 }
 
 function addInfoInit() {
@@ -43,6 +44,10 @@ function hideSeek(e) {
   e.target.innerHTML = infoElem.classList.contains("visible") ? " [-info]" : " [+info]";
 }
 
+
+var toload_count = 0
+var toload_loaded = 0
+
 function includeHTML() {
   var z, i, elmnt, file, xhttp;
   /* Loop through a collection of all HTML elements: */
@@ -52,6 +57,8 @@ function includeHTML() {
     /*search for elements with a certain atrribute:*/
     file = elmnt.getAttribute("w3-include-html");
     if (file) {
+      toload_count++;
+
       /* Make an HTTP request using the attribute value as the file name: */
       xhttp = new XMLHttpRequest();
       xhttp.onreadystatechange = function () {
@@ -64,6 +71,7 @@ function includeHTML() {
           }
           /* Remove the attribute, and call this function once more: */
           elmnt.removeAttribute("w3-include-html");
+		  toload_loaded++;
           includeHTML();
         }
       };
@@ -76,4 +84,16 @@ function includeHTML() {
       return;
     }
   }
+
+	if ((toload_count != 0) && (toload_loaded == toload_count)) {
+		console.log("loaded " + toload_loaded);
+		updateHeaderLinks();
+		if (window.location.hash) {
+			var dom = document.getElementById(window.location.hash.substring(1));
+			if (dom) {
+				dom.scrollIntoView();
+			}
+
+		}
+	}
 }
