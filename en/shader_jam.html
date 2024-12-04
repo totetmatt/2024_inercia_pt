@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Inércia 2024 - Shader Royale Jam</title>
+  <link rel="canonical" href="https://2024.inercia.pt/">
+  <meta property="og:site_name" content="Inércia 2024">
+  <meta property="og:title" content="Inércia 2024 -Shader Royale Jam How to">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:url" content="https://2024.inercia.pt/">
+  <meta property="og:image"
+    content="https://raw.githubusercontent.com/inerciapt/2024_inercia_pt/refs/heads/main/images/social_thumbnail.jpg">
+  <meta property="og:image:alt" content="Shader Royale Jam How to for Inércia 2024">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:description" content="Inércia 2024 - Shader Royale Jam How to">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Inércia 2024 - Shader Royale Jam How to">
+  <meta name="twitter:description" content="Inércia 2024 - Shader Royale Jam How to ">
+  <meta name="twitter:image"
+    content="https://raw.githubusercontent.com/inerciapt/2024_inercia_pt/refs/heads/main/images/social_thumbnail.jpg">
+  <meta name="twitter:image:alt" content="Shader Royale Jam How to for Inércia 2024">
+  <meta name="twitter:url" content="https://2024.inercia.pt/">
+  <meta name="twitter:site" content="@inerciaparty">
+  <meta name="twitter:creator" content="@inerciaparty">
+
+  <meta property="article:publisher" content="https://www.facebook.com/inerciaparty">
+
+  <meta name="description" content="Inércia 2024 -Shader Royale Jam How to">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/css2">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/ID_64px.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/ID_64px.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/ID_64px.png">
+  <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+  <script type="text/javascript" src="../js/inc.js"></script>
+
+  <link rel="stylesheet" href="../css/lite-yt-embed.min.css">
+  <script defer="defer" src="../css/lite-yt-embed.min.js.download"></script>
+
+</head>
+
+<body>
+  <div w3-include-html="./header.html"></div>
+
+  <main tabindex="-1" id="main-content">
+    <article class="b-article" itemscope="" itemtype="https://schema.org/Article">
+      <div class="b-pageHeader">
+        <div class="b-pageHeader__container">
+          <div class="m-componentHeader">
+            <h2 class="a-heading">Inércia 2024 - Shader Royale Jam</h2>
+            <div class="a-summary -medium">How to</div>
+          </div>
+        </div>
+      </div>
+      <div class="b-article__container">
+        <div class="b-article__content s-content">
+          <br />
+
+          <h2 tabindex="-1" class="blueh -h4">Bonzomatic</h2>
+          <p>The Shader Royale Jam will be using Bonzomatic. You can download the program here :</p>
+          <ul>
+            <li><a href="https://github.com/wrightwriter/Bonzomatic-Compute/releases/tag/v1.0.1">https://github.com/wrightwriter/Bonzomatic-Compute/releases/tag/v1.0.1</a> - Get this one by default</li>
+            <li><a href="https://github.com/TheNuSan/Bonzomatic/releases/tag/v13">https://github.com/TheNuSan/Bonzomatic/releases/tag/v13</a> - You can still use Nusan's version without compute shader if you want</li>
+          </ul>
+          <p> You just need to unzip the file. </p>
+          <p> MacOS and Linux users : There is unfortunatelly no official build, so you will have to build from source. Besure also to fetch the font and textures.
+            Also, there is no stability guarantee on theses platforms. </p>
+          
+          <h2 tabindex="-1" class="blueh -h4">Extra Texture Installation</h2>
+       <p> A package with extra textures will be available for the jam.</p>
+       <ul>
+        <li> Download zip file <a href="../assets/Inercia2024Textures.zip">Inercia2024Textures.zip</a> and unzip to a directory </li>
+        <li>
+          Copy the content of the textures directory and paste everythning inside your Bonzomatic textures directory. Your Bonzomatic directory should look like this :
+          <pre>
+            C:\Path\to\Bonzomatic
+            textures\
+                checker.png
+                noise.png
+                tex1.jpg
+                [...]
+                InerciaLogo2024.png
+          </pre>
+        </li>
+        <li>
+          Inside you bonzomatic folder, update your config.json to add the texture like this :
+          <pre>//config.json
+          [...]
+          "textures": {
+              "texChecker": "textures/checker.png",
+              "texNoise": "textures/noise.png",
+              "texTex1": "textures/tex1.jpg",
+              "texTex2": "textures/tex2.jpg",
+              "texTex3": "textures/tex3.jpg",
+              "texTex4": "textures/tex4.jpg",
+              "texInerciaLogo2024": "textures/InerciaLogo2024.png"
+            },
+            [...]</pre>
+        </li>
+        <li>
+          Erase or move the shader.glsl if it exists on your Bonzomatic directory and start Bonzomatic. You should see a texture called texInerciaLogo2024 in the list of uniform texture at the top of the file.
+        </li>
+        <li>
+          You can use the testTexture.glsl to check it works. The testTexture.glsl also contain a helper function getTexture that resize the texture to the correct ratio and reverse the Y axis.
+  
+          <pre>
+            vec4 getTexture(sampler2D sampler, vec2 uv){
+                vec2 size = textureSize(sampler,0);
+                float ratio = size.x/size.y;
+                return texture(sampler,uv*vec2(1.,-1.*ratio)-.5);
+            }
+          </pre>
+        </li>
+       </ul>
+<h2 tabindex="-1" class="blueh -h4">How to connect during the Jam</h2>
+<p> Click on Bonzomatic.exe, a window should open asking your for configuration. On the Network panel ensure you have the following settings :
+  
+  <ul>
+    <li>SENDER is checked</li>
+    <li>Server: <code>ws://drone.alkama:9000</code></li>
+    <li>Room: <code>inerciajam2024</code></li>
+    <li>Nickname: <code>{you nickname}</code></li>
+    <li>Click on <code>Run</code></li>
+  </ul>
+</p>
+<p>
+  If you're on MacOs or Linux, you need to update <code>config.json</code> and update the <code>serverUrl</code> to : <code>ws://drone.alkama.com:9000/inerciajam2024/{yourhandle}</code>
+</p>
+<p>
+  If you don't see a Red Block next to your name on the bottom right of Bonzomatic main window, it means you're OK. Otherwise there might be an issue.
+</p>
+<h3 tabindex="-1" class="blueh -h4">Trouble shooting</h3>
+<p>
+  Sometime DNS resolution isn't working properly : instead of <code>ws://drone.alkama:9000</code> use <code>ws://37.187.21.171:9000</code>
+</p>
+          
+
+  <div w3-include-html="../common/footer.html"></div>
+</body>
+
+</html>
